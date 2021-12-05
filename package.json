@@ -1,13 +1,14 @@
 {
     "type": "module",
     "private": true,
-    "name": "webpack-template",
+    "name": "lumagl-transform-feedback-example",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "webpack serve --mode development --open --hot --config webpack.config.js"
+        "dev": "webpack serve --mode development --open --hot --config webpack.config.js",
+        "build": "webpack"
     },
     "repository": {
         "type": "git",
@@ -30,5 +31,8 @@
         "webpack-cli": "^4.8.0",
         "webpack-dev-server": "^4.3.1"
     },
-    "dependencies": {}
+    "dependencies": {
+        "@luma.gl/engine": "^8.5.10",
+        "@luma.gl/webgl": "^8.5.10"
+    }
 }
